@@ -1,0 +1,1114 @@
+/* Start varibles */
+
+:root{
+    --main-color:#19c8fa;
+    --transparent-color:rgb(15 116 143 / 70%);
+    
+}
+
+/* End varibles */
+
+/* Start Globale Rules */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+ 
+body{
+    font-family: "Open Sans", sans-serif;
+}
+
+ul {
+    list-style: none;
+  }
+
+/* End Globale Rules */
+
+/* Start header navbar home section */
+
+.header-home{
+    background: linear-gradient(rgb(0 0 0 / 61%), rgb(0 0 0 / 60%)), url(../media/img/landing.jpg);
+    background-size: cover;
+    min-height: 650px;
+    position: relative;
+}
+
+.nav-home{
+    display: flex;
+    align-items: center;
+    position: relative;
+    min-height: 97px;
+}
+
+.nav-home::after{
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: #a2a2a2;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+
+}
+
+.nav-home img{
+    width: 130px;
+}
+
+.nav-home .nav-links{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1;
+
+    
+}
+
+.nav-home .toggle-menu{
+    display: none;
+    font-size: 25px;
+    color: #fff;
+    margin-right: 20px;
+}
+
+@media only screen and (max-width:767px){
+    .nav-home .toggle-menu{
+        display: block;
+    }
+}
+
+
+.nav-home .nav-links ul{
+    display: flex;
+    margin-bottom: 0px;
+}
+
+@media only screen and (max-width:767px){
+    .nav-home .nav-links ul{
+        display: none;
+    }
+    
+    .nav-home .toggle-menu:hover + ul{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #00000070;
+    }
+
+    .nav-home .toggle-menu:hover + ul li a{
+        padding: 10px;
+    }
+}
+
+
+.nav-home .nav-links ul li a{
+    display: block;
+    padding: 40px 10px;
+    color: #fff;
+    text-decoration: none;
+    z-index: 1;
+    position: relative;
+    transition: 0.3s;
+
+}
+
+.nav-home .nav-links ul li a:hover , .nav-home .nav-links ul li a.active{
+    color: var(--main-color);
+    border-bottom: 1px var(--main-color) solid;
+}
+
+.nav-home .search-icon{
+    width: 50px;
+    height: 35px;
+    border-left: 1px #fff solid;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav-home .search-icon svg{
+    font-size: 28px;
+    color: #fff;
+}
+
+
+
+/* End header navbar home section */
+
+
+
+/* Start header landing home section */
+
+
+.landing-home .content{
+    background-color: var(--transparent-color);
+    margin-top: 50px;
+    padding: 60px 60px 60px 140px;
+    max-width: 675px;
+}
+
+@media only screen and (max-width: 767px){
+    .landing-home .content{
+    padding: 40px 40px 40px 80px;
+
+    }
+}
+
+@media only screen and (max-width: 575px){
+    .landing-home .content{
+    padding: 30px 30px 30px 60px;
+
+    }
+}
+
+.landing-home .content h2{
+    font-size: 33px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #fff;
+}
+
+@media only screen and (max-width: 767px){
+    .landing-home .content h2{
+        font-size: 25px;
+
+
+    }
+}
+
+@media only screen and (max-width: 575px){
+    .landing-home .content h2{
+        font-size: 16px;
+
+
+    }
+}
+
+
+.landing-home .content p{
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #ffffff78;
+}
+
+@media only screen and (max-width: 767px){
+    .landing-home .content p{
+        font-size: 15px;
+
+
+    }
+}
+
+@media only screen and (max-width: 575px){
+    .landing-home .content p{
+        font-size: 15px;
+
+
+    }
+}
+
+
+
+.landing-home .angles-icon{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    width: 100%;
+    top: 50%;
+    font-size: 31px;
+    color: #fff;
+}
+
+.landing-home .circles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: calc(50% - 45px);
+    top: 92%;
+
+}
+
+.landing-home .circles span{
+    display: block;
+    width: 22px;
+    height: 22px;
+    border: 2px #fff solid;
+    border-radius: 50%;
+    margin-right: 8px;
+
+}
+
+.landing-home .active-circle{
+    background-color: var(--main-color);
+    border: none !important;
+
+}
+
+/* End header landing home section */
+
+/* Start special heading */
+
+.special-heading{
+    padding: 100px 0px;
+    text-align: center;
+}
+
+.special-heading h2{
+    text-transform: uppercase;
+    font-size: 45px;
+    font-weight: 700;
+    padding-bottom: 30px;
+}
+
+.special-heading .underline{
+    position: absolute;
+    top: 70%;
+    left: calc(50%);
+
+
+}
+
+.special-heading .underline .line{
+    display: block;
+    position: absolute;
+    top: 60%;
+    left: calc(50% - 60px);
+    height: 2px;
+    width: 120px;
+    background-color: #000;
+
+}
+
+.special-heading .underline .circle{
+    display: block;
+    position: absolute;
+    top: calc(60% - 9px);
+    left: calc(50% - 9px);
+    height: 18px;
+    width: 18px;
+    border: 2px #000 solid;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+/* End special heading */
+
+
+/* Start services home section */
+
+.services-home{
+    padding-bottom: 100px;
+}
+
+.services-home .card-services{
+    display: flex;
+
+}
+
+.services-home .card-services svg{
+    font-size: 48px;
+    margin-right: 40px;
+
+}
+
+.services-home .card-services .content h4{
+    font-size: 27px;
+    font-weight: 500;
+    color: var(--main-color);
+    padding-bottom: 10px;
+}
+
+.card-services .content p{
+    color: #0000007a;
+    line-height: 1.8;
+}
+
+
+/* End services home section */
+
+
+
+/* Start design features home section */
+
+.design-features{
+    height: 600px;
+    background: linear-gradient(rgb(0 0 0 / 60%), rgb(0 0 0 / 60%)), url(../media/img/design-features.jpg);
+    
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+
+.design-features img{
+    position: absolute;
+    left: calc(50% - 169px);
+    top: 200px;
+}
+
+.design-features .content{
+    background-color: var(--transparent-color);
+    padding: 50px 0px 50px 50px;
+    margin-top: 109.405px;
+    color: #fff;
+}
+
+@media only screen and (max-width: 575px){
+    .design-features .content{
+    padding: 40px 0px 40px 40px;
+
+    }
+}
+
+
+.design-features .content h4{
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 50px;
+}
+
+@media only screen and (max-width: 575px){
+    .design-features .content h4{
+    font-size: 20px;
+    }
+}
+
+.design-features .content .feature{
+    display: flex;
+}
+
+.design-features .content .feature svg{
+    padding-right: 25px;
+    padding-bottom: 30px;
+    font-size: 18px;
+}
+
+.design-features .content .feature h5{
+    font-size: 18px;
+    font-weight: 300;
+}
+
+/* End design features home section */
+
+
+/* Start portfolio home section */
+
+.portfolio-home{
+    margin-bottom: 100px;
+}
+
+
+.portfolio-home .items span{
+    padding: 8px;
+}
+
+.portfolio-home .items span:nth-of-type(1){
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+.portfolio-home .card-portfolio{
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+    margin-bottom: 5px;
+
+}
+
+.portfolio-home .card-portfolio .content{
+    position: absolute;
+    bottom: -100%;
+    background-color: #fff;
+    padding: 20px 0px 0px 20px;
+    width: 100%;
+    transition: all  0.3s ease ;
+    
+}
+
+.portfolio-home .card-portfolio:hover .content{
+    bottom: 0;
+}
+.portfolio-home .card-portfolio img{
+    transition: all  0.3s ease ;
+
+}
+.portfolio-home .card-portfolio:hover img{
+    transform: rotate(3deg) scale(1.1);
+}
+
+
+.portfolio-home .card-portfolio .content p{
+    color: var(--main-color);
+    padding-left: 5px;
+}
+
+.portfolio-home .more-putton{
+    /* width: 100px; */
+    margin: auto;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.portfolio-home .more-putton a{
+    /* display: block; */
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+/* End portfolio home section */
+
+
+/* Start video home section */
+
+.video-home{
+    min-height: 100px;
+    padding: 0;
+    position: relative;
+}
+
+.video-home .video{
+    padding: 0;
+}
+
+.video-home .video::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 5px);
+    top: 0;
+    left: 0;
+    background-color: rgb(0 0 0 / 40%);
+}
+.video-home .video video{
+    width: 100%;
+}
+
+.video-home .content{
+    position: absolute;
+    top: calc(50% - 126px);
+    background-color: var(--transparent-color);
+    padding: 50px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 575px){
+    .video-home .content{
+        padding: 35px 2px;
+        top: calc(50% - 88.6955px);
+
+    }
+}
+
+.video-home .content h4{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 21px;
+}
+
+@media only screen and (max-width: 575px){
+    .video-home .content h4{
+        font-size: 22px;
+        font-weight: 400;
+        margin-bottom: 15px;
+
+    }
+}
+
+.video-home .content p{
+    font-size: 19px;
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 38px;
+
+}
+
+
+@media only screen and (max-width: 575px){
+    .video-home .content p{
+        font-size: 16px;
+        font-weight: 300;
+        margin-bottom: 18px;
+
+    }
+}
+
+.video-home .content a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 19px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #000;
+    padding: 9px 20px;
+}
+
+@media only screen and (max-width: 575px){
+    .video-home .content a{
+        font-size: 16px;
+        font-weight: 400;
+        padding: 6px 16px;
+
+    }
+}
+
+/* End video home section */
+
+
+
+/* Start about home section */
+
+.about-home{
+    height: 600px;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 767px){
+    .about-home{
+        height: 500px;
+    }
+}
+
+/* End about home section */
+
+/* Start stats home section */
+
+.stats-home{
+    min-height: 450px;
+    background: linear-gradient(rgb(0 0 0 / 80%), rgb(0 0 0 / 70%)), url(../media/img/stats.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px;
+    /* position: relative; */
+}
+
+.stats-home .card-stats{
+    text-align: center;
+    background-color: var(--transparent-color);
+    padding: 50px 0px;
+    margin-bottom: 2px;
+}
+
+.stats-home .card-stats svg{
+    font-size: 17px;
+    color: #fff;
+    background-color: #000;
+    padding: 12px;
+    border-radius: 50%;
+}
+
+.stats-home .card-stats .number{
+    margin: 10px 0px;
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.stats-home .card-stats p{
+    font-size: 15px;
+    color: #fff;
+}
+
+
+/* End stats home section */
+
+/* Start skills home section */
+
+.skills-home{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.skills-home img{
+    width: 100px;
+    border-radius: 50%;
+    text-align: center;
+    /* padding-bottom: 30px; */
+
+}
+
+.skills-home h5{
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.skills-home p{
+    color: rgb(0 0 0 / 50%);
+    line-height: 2;
+    margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 767px){
+    .skills-home .testimonials .data{
+        text-align: center;
+    }
+}
+
+
+.skills-home .testimonials .data p{
+    color: #000;
+    line-height: 1.8;
+}
+
+.skills-home .testimonials .data .job-name{
+    position: absolute;
+    bottom: 20%;
+    right: 3%;
+    font-size: 14px;
+    color: rgb(0 0 0 / 50%);
+}
+
+.skills-home .testimonials .circles{
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+
+
+}
+
+.skills-home .testimonials .circles span{
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 1px rgb(0 0 0 / 50%) solid;
+}
+
+.skills-home .testimonials .circles .active{
+    background-color: var(--main-color);
+    border: none;
+}
+
+
+.skills-home .skills h6{
+    text-transform: uppercase;
+    margin-bottom: 13px;
+}
+
+.skills-home .skills .rect{
+    height: 30px;
+    background-color: rgb(0 0 0 / 10%);
+    margin-bottom: 40px;
+}
+
+
+
+
+.skills-home .skills .rect span{
+    display: block;
+    height: 30px;
+    background-color: var(--main-color);
+    position: relative;
+}
+
+.skills-home .skills .rect span::after{
+    content: attr(data-progress);
+    position: absolute;
+    top: -40px;
+    right: -20px;
+    width: 40px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 6px;
+    padding: 2px 5px;
+    text-align: center;
+}
+
+.skills-home .skills .rect span::before{
+    content: "";
+    position: absolute;
+    top: -13px;
+    right: -8px;
+    border-color: #000 transparent transparent transparent;
+    border-width: 8px;
+    border-style: solid;
+}
+
+
+/* End skills home section */
+
+
+
+/* Start Quote home secftion */
+
+.quote-home{
+    height: 350px;
+    background-image: url(../media/img/quote.jpg);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.quote-home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 80%);
+}
+
+
+
+.quote-home p:nth-of-type(1){
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.quote-home p:nth-of-type(2){
+    color: #fff;
+}
+
+/* End Quote home secftion */
+
+/* Start Pricing home section */
+
+.Pricing-home .card-Pricing{
+    background-color: #fcfcfc;
+}
+
+.Pricing-home .card-Pricing .price{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 35px;
+    border-top: var(--main-color) 1px solid;
+    border-bottom: var(--main-color) 1px solid;
+
+}
+
+.Pricing-home .card-Pricing .price p{
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.Pricing-home .card-Pricing .price div{
+    font-size: 50px;
+    font-weight: 700;
+    position: relative;
+}
+
+.Pricing-home .card-Pricing .price div::before{
+    content: "$";
+    position: absolute;
+    top: 0;
+    font-size: 26px;
+    font-weight: 200;
+    left: -20px;
+}
+
+.Pricing-home .card-Pricing .price div::after{
+    content: "/Mo";
+    font-size: 19px;
+    font-weight: 700;
+    margin-left: 13px;
+}
+
+.Pricing-home .card-Pricing .features{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0;
+
+}
+.Pricing-home .card-Pricing .features::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--main-color);
+}
+
+
+.Pricing-home .card-Pricing .features li{
+    display: block;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    font-weight: 400;
+    position: relative;
+
+
+}
+
+.Pricing-home .card-Pricing .features li:not(:nth-of-type(4))::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 60%;
+    height: 1px;
+    right: 20%;
+    background-color: var(--main-color);
+}
+
+.Pricing-home .card-Pricing .buy-now{
+    padding: 20px;
+}
+
+.Pricing-home .card-Pricing a{
+    display: block;
+    text-decoration: none;
+    width: fit-content;
+    margin: auto;
+    padding: 15px;
+    border: var(--main-color) 1px solid;
+    border-radius: 10px;
+}
+
+.Pricing-home .contact-pricing{
+    margin: 50px 0px 100px 0px;
+    text-align: center;
+}
+
+.Pricing-home .contact-pricing p{
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.Pricing-home .contact-pricing a{
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: var(--main-color);
+    color: #FFF;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+/* End Pricing home section */
+
+
+
+/* Start Subscribe home section */
+
+.Subscribe-home{
+    height: 250px;
+    background-image: url(../media/img/subscribe.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.Subscribe-home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 50%);
+}
+
+.Subscribe-home form{
+    display: flex;
+    justify-content: space-between;
+    border: #fff 1px solid;
+    align-items: center;
+    position: relative;
+}
+
+.Subscribe-home form input{
+    all: unset;
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    color: #fff;
+    font-weight: 600;
+    padding: 20px;
+}
+
+.Subscribe-home form input::placeholder{
+    color: #fff;
+}
+
+.Subscribe-home form input:nth-of-type(1){
+    padding-left: 56px;
+    flex: 1;
+}
+.Subscribe-home form input:nth-of-type(2){
+    background-color: var(--main-color);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.Subscribe-home form svg{
+    position: absolute;
+    top: calc(50% - 13px);
+    left: 15px;
+    font-size: 26px;
+    color: #fff;
+}
+
+.Subscribe-home .text p{
+    color: #fff;
+    line-height: 2;
+}
+
+/* End Subscribe home section */
+
+
+
+/* Start Contact Us home section */
+
+.contact-home{
+    margin-bottom: 100px;
+}
+
+.contact-home form{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.contact-home form input{
+    padding: 20px;
+    margin-bottom: 30px;
+    border: rgb(173, 172, 172) 1px solid;
+}
+
+.contact-home form textarea{
+    margin-bottom: 30px;
+    padding: 20px;
+    height: 190px;
+    border: #a2a2a2 1px solid;
+}
+
+.contact-home form input:nth-of-type(3){
+    width: fit-content ;
+    background-color: var(--main-color);
+    border: none;
+    color: #fff;
+    position: absolute;
+    bottom: -94px;
+    right: 0;
+}
+
+.contact-home .data{
+    margin-bottom: 100px;
+}
+
+@media only screen and (max-width: 767px){
+    .contact-home .data{
+        margin-top: 100px;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+}
+
+.contact-home .data p{
+    color: #a2a2a2;
+    line-height: 2;
+}
+
+/* End Contact Us home section */
+
+
+
+/* Start footer home section */
+
+.footer-home{
+    height: 400px;
+    background-image: url(../media/img/subscribe.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    margin: 0;
+
+}
+
+.footer-home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 70%);
+}
+
+.footer-home h4{
+    margin-top: 85px;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.footer-home hr{
+border: none;
+    height: 1px;
+    background-color: #fff;
+    width: 205px;
+    margin: auto;
+}
+
+.footer-home .icons{
+    margin-top: 40px ;
+    margin-bottom: 80px ;
+}
+
+.footer-home .icons svg{
+    font-size: 20px;
+    color: #fff;
+    padding-left: 20px;
+}
+
+.footer-home p{
+    color: #fff;
+    font-weight: 500;
+}
+
+.footer-home p span{
+    color: var(--main-color);
+}
+
+
+/* End footer home section */
+
+
+
+
+
+
+
+
